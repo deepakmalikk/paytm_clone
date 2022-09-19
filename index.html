@@ -20,8 +20,9 @@
             theme: {
                
                 screens: {
-                    md: "1110px",
-                    sm: "925px",
+                    md: "668px",
+                    sm: "480px",
+                    lg: "976px",
                 },
                 extend: {
                     colors: {
@@ -40,15 +41,24 @@
     
     <!-- paytm navBar -->
     <nav class="container flex h-[30px] m-1 w-auto justify-between">
-        <div >
+        <div class="md:invisible md:absolute" >
             <i class="fa-solid fa-bars"></i>
         </div>
-        <div class="w-20 flex justify-around">
+        <div class="w-20 flex justify-around md:mx-3">
             <img src="./assets/paytm_logo.png" alt="paytm_logo">
         </div>
-        <div class=" flex flex-wrap	bg-paytm-blue w-[50px] h-5 rounded-full" >
+        <div class="flex mt-2 text-[10px]">
+            <ul class="flex space-x-3 ">
+                <li class="text-xs">Paytm for Consumer</li>
+                <li class="text-xs">Paytm for Business</li>
+                <li class="text-xs">Company</li>
+                <li class="text-xs">Investor Relations</li>
+                <li class="text-xs">Carrer</li>
+            </ul>
+        </div>
+        <div class=" flex flex-wrap	bg-paytm-blue w-[50px] mt-1  h-5 rounded-full" >
        
-            <p class="text-[7px] my-auto mx-auto text-white justify-center	">Log In</p>
+            <p class="text-[7px] my-auto mx-auto text-white justify-center ">Log In</p>
          
             <img class="h-5 justify-end " src="./assets/profile.svg" alt="profile">
            
