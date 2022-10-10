@@ -10,18 +10,21 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="./assets/favicon-img.png" type="image/x-icon">
 
-<!-- fontawesome icon -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <!-- tailwindCSS in cdn -->
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- tailwindCSS in cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- tailwind customized config-->
     <script>
         tailwind.config = {
             theme: {
-               
+
                 screens: {
-                    md: "668px",
+
                     sm: "480px",
+                    md: "788px",
                     lg: "976px",
                 },
                 extend: {
@@ -37,33 +40,39 @@
 </head>
 
 <body>
-    
-    
+
+
     <!-- paytm navBar -->
-    <nav class="container flex h-[30px] m-1 w-auto justify-between">
-        <div class="md:invisible md:absolute" >
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <div class="w-20 flex justify-around md:mx-3">
-            <img src="./assets/paytm_logo.png" alt="paytm_logo">
-        </div>
-        <div class="flex mt-2 text-[10px]">
-            <ul class="flex space-x-3 ">
-                <li class="text-xs">Paytm for Consumer</li>
-                <li class="text-xs">Paytm for Business</li>
-                <li class="text-xs">Company</li>
-                <li class="text-xs">Investor Relations</li>
-                <li class="text-xs">Carrer</li>
-            </ul>
-        </div>
-        <div class=" flex flex-wrap	bg-paytm-blue w-[50px] mt-1  h-5 rounded-full" >
-       
-            <p class="text-[7px] my-auto mx-auto text-white justify-center ">Log In</p>
-         
-            <img class="h-5 justify-end " src="./assets/profile.svg" alt="profile">
-           
-  
-        </div>
+    <nav class="flex h-[30px] ml-3 mt-2 w-full">
+        <div class="flex md:hidden">
+            <button class="btn btn-square btn-ghost ">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    class="inline-block w-5 h-5 stroke-current">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+            <div class="flex-1">
+                <img class="w-15 h-5   flex ml-3 mt-1 " src="./assets/paytm_logo.png" alt="paytm_logo">
+            </div>
+
+            <div class="flex mt-2 text-[10px] invisible md:visible">
+                <ul class="flex space-x-3 ">
+                    <li class="text-xs">Paytm for Consumer</li>
+                    <li class="text-xs">Paytm for Business</li>
+                    <li class="text-xs">Company</li>
+                    <li class="text-xs">Investor Relations</li>
+                    <li class="text-xs">Carrer</li>
+                </ul>
+            </div>
+            <div class=" flex-none flex flex-wrap	bg-paytm-blue w-[50px] mt-1  h-5 rounded-full justify-self-end ">
+
+                <p class="text-[7px] my-auto mx-auto text-white justify-center ">Log In</p>
+
+                <img class="h-5 justify-end " src="./assets/profile.svg" alt="profile">
+
+
+            </div>
     </nav>
 </body>
 
