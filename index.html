@@ -1,107 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paytm: Secure & Fast UPI Payments, Recharge Mobile & Pay Bills</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Paytm: Secure & Fast UPI Payments, Recharge Mobile & Pay Bills
+    </title>
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="./assets/favicon-img.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon-img.png"
+      type="image/x-icon"
+    />
 
     <!-- fontawesome icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- tailwindCSS in cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- tailwindCSS in cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- tailwind customized config-->
     <script>
-        tailwind.config = {
-            theme: {
-
-                screens: {
-
-                    sm: "420px",
-                    md: "500px",
-                    lg: "788px",
-                    xl: "1320px",
-                },
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                        "paytm-blue": "#00baf2",
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: "420px",
+            md: "500px",
+            lg: "903px",
+            xl: "1280px",
+          },
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "paytm-blue": "#00baf2",
+            },
+          },
+        },
+      };
     </script>
+  </head>
 
-</head>
-
-<body class="bg-[#F5F7FA] font-[poppins] ">
-
-
+  <body class="bg-[#F5F7FA] font-[poppins]">
     <!-- paytm navBar -->
     <div class="navbar flex w-auto h-30 mt-4">
-        <div class="m-4 xl:invisible">
-            <button class="btn btn-square btn-ghost">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    class="inline-block w-7 h-7 stroke-current">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
-                    </path>
-                </svg>
-            </button>
-        </div>
+      <div class="m-4 xl:invisible">
+        <button class="btn btn-square btn-ghost">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            class="inline-block w-7 h-7 stroke-current"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </div>
 
+      <div class="mt-2">
+        <img
+          class="sm:w-[150px] w-[180px] sm:h-15 h-18"
+          src="./assets/paytm_logo.png"
+          alt="paytm upi logo"
+        />
+      </div>
 
-        <div class="mt-2">
-            <img class="sm:w-[150px] w-[180px] sm:h-15 h-18 " src="./assets/paytm_logo.png" alt="paytm upi logo">
-        </div>
+      <!--  -->
+      <div
+        class="text-[0.2px] gap-[0px] invisible relative xl:mt-3.5 xl:text-[20px] xl:font-bold xl:ml-auto xl:mr-auto xl:visible"
+      >
+        <ul class="flex xl:space-x-10">
+          <li>Paytm for Consumer</li>
+          <li>Paytm for Business</li>
+          <li>Company</li>
+          <li>Investor Relations</li>
+          <li>Carrer</li>
+        </ul>
+      </div>
 
-        <!--  -->
-        <div class="text-[0.2px] gap-[0px] invisible relative xl:mt-3.5 xl:text-[20px] xl:ml-auto xl:mr-auto xl:visible">
-            <ul class="flex  xl:space-x-10 ">
-                <li>Paytm for Consumer</li>
-                <li>Paytm for Business</li>
-                <li>Company</li>
-                <li>Investor Relations</li>
-                <li>Carrer</li>
-            </ul>
+      <div
+        class="flex w-[100px] h-[40px] bg-paytm-blue rounded-3xl m-3 font-semibold ml-auto"
+      >
+        <div class="text-white p-auto text-[12px] m-auto pl-2">
+          <p class="">Log In</p>
         </div>
-
-        <div class="flex w-[100px] h-[40px] bg-paytm-blue rounded-3xl m-3 font-semibold ml-auto  ">
-            <div class="text-white p-auto text-[12px] m-auto pl-2">
-                <p class="">Log In</p>
-            </div>
-            <div class=" m-auto">
-                <img class=" w-8 h-15 " src="./assets/profile.svg" alt="profile icon">
-            </div>
+        <div class="m-auto">
+          <img class="w-8 h-15" src="./assets/profile.svg" alt="profile icon" />
         </div>
+      </div>
     </div>
 
-<!-- 2nd section after navbar   -->
+    <!-- 2nd section after navbar   -->
 
-<div class=" w-auto h-[55px] bg-[#EDEEF1] font-black  ">
-    <div class="flex md:pt-1 lg:pt-3 md:place-content-center md:space-x-1">
-        <p >No Wallet KYC Required</p>
-        <span class="text-2xl pt-2 md:pt-0  ">😊</span><p>to pay using UPI on Paytm.</p>
+    <div class="w-auto h-[55px] bg-[#EDEEF1] font-black">
+      <div class="flex md:pt-1 lg:pt-3 md:place-content-center md:space-x-1">
+        <p>No Wallet KYC Required</p>
+        <span class="text-2xl pt-2 md:pt-0">😊</span>
+        <p>to pay using UPI on Paytm.</p>
         <p>Learn more.</p>
+      </div>
     </div>
 
-</div>
+    <!-- main section  -->
 
-
-
-
-
-
-
-
-
-
-  
-</body>
-
+    <div class="mt-[120px] lg:flex">
+      <div class="left text-center lg:text-start lg:mx-3 lg:w-[50%] lg:h-auto">
+        <div clas="img ">
+          <img
+            src="./assets/paytm0.png"
+            class="w-[80px] h-[80px] mx-auto lg:mx-3"
+            alt="paytm se upi"
+          />
+        </div>
+        <div class="text mt-3 lg:mt-[55px]">
+          <h1 class="text-6xl font-black m-3">
+            India's Most-loved Payments App
+          </h1>
+          <p class="text-2xl font-medium lg:ml-3 lg:mt-[30px] xl:w-[550px]">
+            Recharge & pay bills, book flights & movie tickets, open a savings
+            account, invest in stocks & mutual funds, and do a lot more.
+          </p>
+        </div>
+        <div
+          class="flex border-solid bg-[#000000] text-white w-[250px] h-[40px] rounded-full text-center place-content-center mx-auto my-3 lg:mx-3 lg:mt-[50px]"
+        >
+          <p class="justify-center text-lg m-auto">Download Paytm App</p>
+          <img
+            src="./assets/apple.svg"
+            class="w-4 h-5 my-auto mx-2"
+            alt="apple icon"
+          />
+          <img
+            src="./assets/playstore.svg"
+            class="w-4 h-5 my-auto mr-2"
+            alt="app store icon"
+          />
+        </div>
+      </div>
+      <div class="right md:mx-1">
+        <img
+          src="./assets/bannerimg.png"
+          class="mx-auto w-[400px] h-[300px] lg:w-[580px] lg:h-[480px] xl:ml-[35px]"
+          alt="banner img"
+        />
+      </div>
+    </div>
+  </body>
 </html>
