@@ -23,9 +23,10 @@
 
                 screens: {
 
-                    sm: "480px",
-                    md: "788px",
-                    lg: "976px",
+                    sm: "420px",
+                    md: "500px",
+                    lg: "788px",
+                    xl: "1320px",
                 },
                 extend: {
                     colors: {
@@ -39,41 +40,68 @@
 
 </head>
 
-<body>
+<body class="bg-[#F5F7FA] font-[poppins] ">
 
 
     <!-- paytm navBar -->
-    <nav class="flex h-[30px] ml-3 mt-2 w-full">
-        <div class="flex md:hidden">
-            <button class="btn btn-square btn-ghost ">
+    <div class="navbar flex w-auto h-30 mt-4">
+        <div class="m-4 xl:invisible">
+            <button class="btn btn-square btn-ghost">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    class="inline-block w-5 h-5 stroke-current">
+                    class="inline-block w-7 h-7 stroke-current">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
                     </path>
                 </svg>
             </button>
-            <div class="flex-1">
-                <img class="w-15 h-5   flex ml-3 mt-1 " src="./assets/paytm_logo.png" alt="paytm_logo">
+        </div>
+
+
+        <div class="mt-2">
+            <img class="sm:w-[150px] w-[180px] sm:h-15 h-18 " src="./assets/paytm_logo.png" alt="paytm upi logo">
+        </div>
+
+        <!--  -->
+        <div class="text-[0.2px] gap-[0px] invisible relative xl:mt-3.5 xl:text-[20px] xl:ml-auto xl:mr-auto xl:visible">
+            <ul class="flex  xl:space-x-10 ">
+                <li>Paytm for Consumer</li>
+                <li>Paytm for Business</li>
+                <li>Company</li>
+                <li>Investor Relations</li>
+                <li>Carrer</li>
+            </ul>
+        </div>
+
+        <div class="flex w-[100px] h-[40px] bg-paytm-blue rounded-3xl m-3 font-semibold ml-auto  ">
+            <div class="text-white p-auto text-[12px] m-auto pl-2">
+                <p class="">Log In</p>
             </div>
-
-            <div class="flex mt-2 text-[10px] invisible md:visible">
-                <ul class="flex space-x-3 ">
-                    <li class="text-xs">Paytm for Consumer</li>
-                    <li class="text-xs">Paytm for Business</li>
-                    <li class="text-xs">Company</li>
-                    <li class="text-xs">Investor Relations</li>
-                    <li class="text-xs">Carrer</li>
-                </ul>
+            <div class=" m-auto">
+                <img class=" w-8 h-15 " src="./assets/profile.svg" alt="profile icon">
             </div>
-            <div class=" flex-none flex flex-wrap	bg-paytm-blue w-[50px] mt-1  h-5 rounded-full justify-self-end ">
+        </div>
+    </div>
 
-                <p class="text-[7px] my-auto mx-auto text-white justify-center ">Log In</p>
+<!-- 2nd section after navbar   -->
 
-                <img class="h-5 justify-end " src="./assets/profile.svg" alt="profile">
+<div class=" w-auto h-[55px] bg-[#EDEEF1] font-black  ">
+    <div class="flex md:pt-1 lg:pt-3 md:place-content-center md:space-x-1">
+        <p >No Wallet KYC Required</p>
+        <span class="text-2xl pt-2 md:pt-0  ">😊</span><p>to pay using UPI on Paytm.</p>
+        <p>Learn more.</p>
+    </div>
+
+</div>
 
 
-            </div>
-    </nav>
+
+
+
+
+
+
+
+
+  
 </body>
 
 </html>
