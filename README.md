@@ -31,7 +31,7 @@
 
 ---
 ## Video
-
+![video](./assets/Scroll%20Capture%202022-10-19%20at%2010.54.41%20PM.webm)
 
 ---
 
