@@ -11,7 +11,7 @@
 
 # Project [Deployed Link](https://deepakpaytmuiclone.netlify.app/)
 
-- What I learned from this Project?
+- What did I learn from this Project?
   -
   - Learned how to make fully responsive website using TailwindCSS.
   - Learned how to make a full fledged website end to end.
