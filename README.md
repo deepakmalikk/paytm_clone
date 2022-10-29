@@ -6,7 +6,6 @@
 ![hitesh-choudhary,FSJS](https://img.shields.io/badge/HITESH--CHOUDHARY%20-Full--Stack--JS--bootcamp-green)
 
 ![html,css](https://img.shields.io/badge/html-CSS-9cf)
-![project](https://img.shields.io/badge/PROJECT-15-blue)
 ![responsive](https://img.shields.io/badge/Responsive-Design-orange)
 ![tailwind,css](https://img.shields.io/badge/Tailwind-CSS-green)
 
